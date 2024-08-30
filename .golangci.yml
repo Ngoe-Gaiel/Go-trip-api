@@ -1,0 +1,27 @@
+run:
+  concurrency: 8
+  timeout: 240s
+  tests: true
+linters: # Descriptions: https://github.com/golangci/awesome-go-linters
+  enable-all: true
+  disable:
+    - wrapcheck
+    - testpackage
+    - tagliatelle
+    - forbidigo
+    - gci
+    - gochecknoglobals
+    - exhaustruct
+    - cyclop
+    - gocognit
+    - nlreturn
+    - maintidx
+    - lll
+    - goerr113
+    - depguard
+    - paralleltest  # recomended linter in the future
+    - exhaustivestruct
+    - gomnd
+linters-settings:
+  goimports:
+    local-prefixes: github.com/Iknite-Space
